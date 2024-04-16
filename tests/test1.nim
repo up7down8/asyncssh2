@@ -10,7 +10,7 @@ import asyncdispatch
 import asyncssh2
 
 test "can add":
-  let s = waitFor asyncssh2.newSshSession("10.3.0.31", Port(22), "mwuser", "B2UKuNBHP#")
+  let s = waitFor asyncssh2.newSshSession("ip", Port(22), "user", "password#")
   waitFor s.putFile("tests/test1.nim", "/tmp/test1.nim")
   echo waitFor s.exec("cat /tmp/test1.nim")
   waitFor s.getFile("/tmp/test1.nim", "test1.nim")
