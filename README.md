@@ -5,9 +5,7 @@ clone from: https://github.com/yglukhov/asyncssh
 
 - Add support for Windows
 - Add GC safe, can be used in multi-threaded manner
-- Add support for executing commands and transferring files with timeouts.
 
-`s.exec("cat /tmp/test1.nim",timeout=10)`
 
 ```
   let s = waitFor asyncssh2.newSshSession("ip", Port(22), "user", "password#")
