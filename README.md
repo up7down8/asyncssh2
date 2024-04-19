@@ -5,7 +5,7 @@ clone from: https://github.com/yglukhov/asyncssh
 
 - Add support for Windows
 - Add GC safe, can be used in multi-threaded manner
-- Add support timeout
+- Add support for executing commands and transferring files with timeouts.
 
 `s.exec("cat /tmp/test1.nim",timeout=10)`
 
