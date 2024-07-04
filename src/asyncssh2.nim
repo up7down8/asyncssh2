@@ -6,7 +6,6 @@ import streams
 import asyncssh2/futhark_B248CD8E528CCDE8
 
 
-{.passL: "-L. -Wl,-Bstatic -lssh2 -Wl,-Bdynamic".}
 
 
 when defined(windows):
